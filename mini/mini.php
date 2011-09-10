@@ -4,6 +4,7 @@ session_start();
 include 'functions/pr.function.php';
 include 'plugins/yaml/yaml.plugin.php';
 include 'classes/configure.class.php';
+include 'classes/app.class.php';
 
 date_default_timezone_set(Configure::read('Mini.timezone'));
 

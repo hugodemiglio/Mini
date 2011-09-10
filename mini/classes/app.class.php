@@ -15,12 +15,41 @@
 class App {
   
 /**
+ * Get configure instance
+ *
+ * @return instance
+ * @access public
+ */
+  function &getInstance() {
+		static $instance = array();
+		if (!$instance) {
+			$instance[0] = new Configure();
+		}
+		return $instance[0];
+	}
+  
+/**
  * Import file to application (in construction)
  *
  * @return boolean
  * @access public
  */
   function import($package, $component){
+    $_this =& Configure::getInstance();
+    
+    $types = array(
+      'plugin' => realpath('./mini/plugins'),
+      'helper' => realpath('./mini/helpers'),
+    );
+    
+    if(isset($types[strtolower($package)])){
+      $file = $types[strtolower($package)].'/'.strtolower($component).'.'.strtolower($package).'.php';
+      
+      if(file_exists($file)) include $file;
+      else echo '<strong>Mini: Package error</strong> | Missing file ('.$file.')';
+      
+    }
+    
     return false;
   }
   

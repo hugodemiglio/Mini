@@ -2,6 +2,8 @@
 
 include 'mini/mini.php';
 
-pr($mini);
+echo Form::input();
+
+//pr($mini);
 
 ?>

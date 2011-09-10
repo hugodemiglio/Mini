@@ -1,6 +1,6 @@
 <?php
 
-//App::import('Plugin', 'my_plugin');
+App::import('Helper', 'Form');
 
 Configure::write('Mini.locale', 'en_us');
 
