@@ -29,12 +29,12 @@ class App {
  * @access public
  */
   function &getInstance() {
-		static $instance = array();
-		if (!$instance) {
-			$instance[0] = new Configure();
-		}
-		return $instance[0];
-	}
+    static $instance = array();
+    if (!$instance) {
+      $instance[0] = new Configure();
+    }
+    return $instance[0];
+  }
   
 /**
  * Import file to application (in construction)

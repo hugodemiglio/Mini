@@ -10,9 +10,9 @@ Configure::write('Mini.security_salt', '7gvbmLeB3.Eic8aFKOkNIoTdr4CRJu0M1pqHltDY
 
 Configure::write('Mini.database', array(
   'host' => '127.0.0.1',
-	'login' => 'root',
-	'password' => '',
-	'database' => 'mini',
+  'login' => 'root',
+  'password' => '',
+  'database' => 'mini',
 ));
 
 ?>
