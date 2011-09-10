@@ -62,7 +62,7 @@ class Database{
  */
   function __construct(){
     if(Configure::read('Mini.database')) $this->database = Configure::read('Mini.database');
-    else die(__('database-config-error'));
+    else die(__('database_config_error'));
     $this->dbConnect();
     $this->getTables();
   }
@@ -162,10 +162,10 @@ class Database{
   function dbConnect(){
     if(is_array($this->database)){
       $database = $this->database;
-      $connection = @mysql_connect($database['host'], $database['login'], $database['password']) or die (__('database-connection-error'));
-      @mysql_select_db($database['database']) or die (__('database-not-found'));
+      $connection = @mysql_connect($database['host'], $database['login'], $database['password']) or die (__('database_connection_error'));
+      @mysql_select_db($database['database']) or die (__('database_not_found'));
     } else {
-      echo _('database-not-found');
+      echo _('database_not_found');
       exit(0);
     }
   }

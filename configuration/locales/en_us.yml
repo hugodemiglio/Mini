@@ -1,0 +1,7 @@
+# English United States Locale File
+en_us:
+  database_not_found: '<strong>Mini: Database error</strong> | Database not exists.'
+  database_connection_error: '<strong>Mini: Database error</strong> | Error while connecting to the database.'
+  database_config_error: '<strong>Mini: Database error</strong> | Database configuration cannot be found.'
+  salt_invalid: '<strong>Mini: Security error</strong> | Invalid salt configuration.'
+  salt_not_found': '<strong>Mini: Security error</strong> | Salt configuration not found.'

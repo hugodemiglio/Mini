@@ -81,13 +81,13 @@ class Mini {
   function check_salt(){
     if(Configure::read('Mini.security_salt')){
       $salt = Configure::read('Mini.security_salt');
-      if(strlen($salt) != 62 OR $salt == $this->Database->salt) echo __('salt-invalid');
+      if(strlen($salt) != 62 OR $salt == $this->Database->salt) echo __('salt_invalid');
       else {
         $this->Database->salt = $salt;
         return true;
       }
     } else {
-      echo __('salt-not-found');
+      echo __('salt_not_found');
     }
     return false;
   }

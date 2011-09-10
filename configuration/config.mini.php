@@ -1,6 +1,8 @@
 <?php
 
-Configure::write('Mini.locale', 'en-us');
+//App::import('Plugin', 'my_plugin');
+
+Configure::write('Mini.locale', 'en_us');
 
 Configure::write('Mini.timezone', 'America/Sao_Paulo');
 
