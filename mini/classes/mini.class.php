@@ -17,9 +17,9 @@ $mini = new Mini();
 class Mini {
   
 /**
- * Instance for Configure Class
+ * Configuration data
  *
- * @var object
+ * @var array
  * @access public
  */
   var $Configure = null;
@@ -49,6 +49,14 @@ class Mini {
   var $Session = null;
   
 /**
+ * Packages included
+ *
+ * @var array
+ * @access public
+ */
+  var $Packages = null;
+  
+/**
  * Instance for TarTable Class
  *
  * @var object
@@ -68,6 +76,7 @@ class Mini {
     $this->Request = new Request;
     $this->Session = new Session;
     $this->TarTable = new TarTable;
+    $this->Packages = App::return_packages();
     
     $this->check_salt();
   }

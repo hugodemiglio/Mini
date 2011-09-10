@@ -5,3 +5,4 @@ en_us:
   database_config_error: '<strong>Mini: Database error</strong> | Database configuration cannot be found.'
   salt_invalid: '<strong>Mini: Security error</strong> | Invalid salt configuration.'
   salt_not_found: '<strong>Mini: Security error</strong> | Salt configuration not found.'
+  translate_your_application: "Translate your application!"

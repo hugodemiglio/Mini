@@ -5,3 +5,4 @@ pt_br:
   salt_invalid: '<strong>Mini: Erro de segurança</strong> | Configuração de salt inválida.'
   salt_not_found: '<strong>Mini: Erro de segurança</strong> | Configuração do salt não encontrada.'
   package_not_found: '<strong>Mini: Erro de pacote</strong> | Faltando arquivo de pacote.'
+  translate_your_application: "Traduza sua aplicação!"
