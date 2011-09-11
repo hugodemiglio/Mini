@@ -11,7 +11,7 @@ pt_br:
   send: "Enviar"
   database_query: "Consulta no banco de dados"
   show_post_data: "Resgatar dados de POST"
-  show_get_data: "Resgatar dados de GEt"
+  show_get_data: "Resgatar dados de GET"
   save_data_in_a_session: "Salvar dados em uma sessão"
   show_session_data: "Exibir dados de uma sessão"
   simple_mysql_select: "Metodo simples de MySQL Select"

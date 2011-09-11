@@ -4,6 +4,6 @@ $Route->layout = 'default';
 
 $Route->root = 'examples';
 
-//$Route->connect('cavalo', 'cloro');
+//$Route->connect('mini.instace', 'examples');
 
 ?>

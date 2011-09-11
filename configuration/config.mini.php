@@ -3,6 +3,7 @@
 App::import('Helper', 'Form');
 
 Configure::write('Mini.environment', 'development');
+//Configure::write('Mini.environment', 'production');
 
 Configure::write('Mini.locale', 'en_us');
 

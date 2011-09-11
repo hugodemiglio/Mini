@@ -12,8 +12,6 @@
  * @link          http://mini.hgbrasil.com (Mini)
  */
 
-$mini = new Mini();
-
 class Mini {
   
 /**
