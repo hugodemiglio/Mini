@@ -6,3 +6,15 @@ pt_br:
   salt_not_found: '<strong>Mini: Erro de segurança</strong> | Configuração do salt não encontrada.'
   package_not_found: '<strong>Mini: Erro de pacote</strong> | Faltando arquivo de pacote.'
   translate_your_application: "Traduza sua aplicação!"
+  simple_form_example: "Exemplo simples de formulário"
+  test: "Teste"
+  send: "Enviar"
+  database_query: "Consulta no banco de dados"
+  show_post_data: "Resgatar dados de POST"
+  show_get_data: "Resgatar dados de GEt"
+  save_data_in_a_session: "Salvar dados em uma sessão"
+  show_session_data: "Exibir dados de uma sessão"
+  simple_mysql_select: "Metodo simples de MySQL Select"
+  returns: "Retorna"
+  http_post_to_some_url: "HTTP POST para uma URL"
+  html_helper_is_comming: "Em breve HTML Helper!"

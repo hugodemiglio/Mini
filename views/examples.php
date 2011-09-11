@@ -1,42 +1,75 @@
-<h3>Simple form example</h3>
+<h3><?php echo __('simple_form_example'); ?></h3>
 <?php
+
+highlight_string('<?php echo Form::create();
+
+echo Form::input(array(\'label\' => __(\'test\'), \'id\' => \'test\'));
+
+echo Form::end(__(\'send\')); ?>');
+?>
+<p><strong><?php echo __('returns'); ?>:</strong></p>
+<?php
+
 /* Simple form (in construction) */
 echo Form::create();
 
-echo Form::input(array('label' => 'Test', 'id' => 'test'));
+echo Form::input(array('label' => __('test'), 'id' => 'test'));
 
-echo Form::end();
+echo Form::end(__('send'));
+
 ?>
 
+<h3><?php echo __('database_query'); ?></h3>
 <?php
-
 /* Database query */
-$test = $mini->Database->query("SELECT * FROM test");
+highlight_string('<?php $test = $mini->Database->query("SELECT * FROM test"); ?>');
+?>
 
+<h3><?php echo __('show_post_data'); ?></h3>
+<?php
 /* Post data */
-$post_data = $mini->Request->post;
+highlight_string('<?php $post_data = $mini->Request->post; ?>');
+?>
 
-/* Get data */
-$get_data = $mini->Request->get;
+<h3><?php echo __('show_get_data'); ?></h3>
+<?php
+/* get data */
+highlight_string('<?php $get_data = $mini->Request->get; ?>');
+?>
 
+<h3><?php echo __('save_data_in_a_session'); ?></h3>
+<?php
 /* Save data in a session */
-$mini->Session->write('Hello.world', 'test');
+highlight_string('<?php $mini->Session->write(\'Hello.world\', \'test\'); ?>');
+?>
 
+<h3><?php echo __('show_session_data'); ?></h3>
+<?php
 /* Show a session data */
-echo $mini->Session->read('Hello.world');
+highlight_string('<?php echo $mini->Session->read(\'Hello.world\'); ?>');
+?>
 
+<h3><?php echo __('simple_mysql_select'); ?></h3>
+<?php
 /* Simple MySQL select */
-//$test = $mini->TarTable->select(array('table' => 'test'));
+highlight_string('<?php $test = $mini->TarTable->select(array(\'table\' => \'test\')); ?>');
+?>
 
+<h3><?php echo __('translate_your_application'); ?></h3>
+<?php
 /* Translate your application in (configuration/locales), set default locale in config.mini.php */
-echo __('translate_your_application');
+highlight_string('<?php echo __(\'translate_your_application\'); ?>');
+?>
+<p><strong><?php echo __('returns'); ?></strong>: <?php echo __('translate_your_application'); ?></p>
 
+<h3><?php echo __('http_post_to_some_url'); ?></h3>
+<?php
 /* HTTP post to some URL */
-//$mini->Request->send_post(array('q' => 'test'), 'http://google.com');
+highlight_string('<?php $mini->Request->send_post(array(\'q\' => \'test\'), \'http://google.com\'); ?>');
+?>
 
-/* HTML Helper is comming! */
+<br /><br />
 
-/* Show mini instance */
-pr($mini);
-
+<?php
+highlight_string('<?php /* '.__('html_helper_is_comming').' */ ?>');
 ?>

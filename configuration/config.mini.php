@@ -2,6 +2,8 @@
 
 App::import('Helper', 'Form');
 
+Configure::write('Mini.environment', 'development');
+
 Configure::write('Mini.locale', 'en_us');
 
 Configure::write('Mini.timezone', 'America/Sao_Paulo');

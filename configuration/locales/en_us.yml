@@ -6,3 +6,15 @@ en_us:
   salt_invalid: '<strong>Mini: Security error</strong> | Invalid salt configuration.'
   salt_not_found: '<strong>Mini: Security error</strong> | Salt configuration not found.'
   translate_your_application: "Translate your application!"
+  simple_form_example: "Simple Form Example"
+  test: "Test"
+  send: "Send"
+  database_query: "Database query"
+  show_post_data: "Show POST data"
+  show_get_data: "Show GET data"
+  save_data_in_a_session: "Save data in a session"
+  show_session_data: "Show session data"
+  simple_mysql_select: "Simple MySQL select"
+  returns: "Returns"
+  http_post_to_some_url: "HTTP POST to some URL"
+  html_helper_is_comming: "HTML helper is comming!"

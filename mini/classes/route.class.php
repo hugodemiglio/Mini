@@ -44,7 +44,12 @@ class Route {
     $path = realpath('./views').'/'.$this->view.'.php';
     
     if(!file_exists($path)){
-      $path = realpath('./mini/views/errors/missing_view.php');
+      if(Configure::read('Mini.environment') == 'production') {
+        $file = '404';
+        header("http/1.0 404 not found");
+      }
+      else $file = 'missing_view';
+      $path = realpath('./mini/views/errors/'.$file.'.php');
     }
     
     ob_start();
@@ -62,7 +67,8 @@ class Route {
     $path = realpath('./views').'/'.$this->layout.'.php';
     
     if(!file_exists($path)){
-      $path = realpath('./mini/views/errors/missing_layout.php');
+      if(Configure::read('Mini.environment') == 'production') $file = '404'; else $file = 'missing_layout';
+      $path = realpath('./mini/views/errors/'.$file.'.php');
     }
     
     ob_start();
