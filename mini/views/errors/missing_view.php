@@ -1,0 +1,1 @@
+<strong>mini error:</strong> Missing view file (<?php echo $view_name; ?>).

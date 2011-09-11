@@ -64,6 +64,10 @@ class App {
     
     return false;
   }
+  
+  function render($view_name = null){
+    
+  }
 
 /**
  * Return all packeges included

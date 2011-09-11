@@ -17,4 +17,9 @@ include 'classes/session.class.php';
 include 'plugins/tartable/tartable.plugin.php';
 include 'classes/mini.class.php';
 
+include 'classes/route.class.php';
+include './configuration/routes.mini.php';
+
+$Route->render_layout();
+
 ?>
